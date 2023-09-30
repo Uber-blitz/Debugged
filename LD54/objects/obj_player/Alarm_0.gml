@@ -1,2 +1,2 @@
 
-bulletReady = "yes"
+//bulletReady = "yes"
