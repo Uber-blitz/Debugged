@@ -1,1 +1,1 @@
-window_set_position(obj_player.x, obj_player.y)
+window_set_position(obj_camera.x, obj_camera.y)
