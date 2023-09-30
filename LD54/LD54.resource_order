@@ -20,8 +20,13 @@
     {"name":"obj_game","order":2,"path":"objects/obj_game/obj_game.yy",},
     {"name":"spr_cursor","order":1,"path":"sprites/spr_cursor/spr_cursor.yy",},
     {"name":"obj_cursor","order":3,"path":"objects/obj_cursor/obj_cursor.yy",},
+    {"name":"obj_goal","order":5,"path":"objects/obj_goal/obj_goal.yy",},
     {"name":"obj_bullet","order":4,"path":"objects/obj_bullet/obj_bullet.yy",},
+    {"name":"spr_door","order":3,"path":"sprites/spr_door/spr_door.yy",},
+    {"name":"RoomTransition","order":1,"path":"rooms/RoomTransition/RoomTransition.yy",},
     {"name":"obj_player","order":1,"path":"objects/obj_player/obj_player.yy",},
     {"name":"spr_bullet","order":2,"path":"sprites/spr_bullet/spr_bullet.yy",},
+    {"name":"obj_key","order":6,"path":"objects/obj_key/obj_key.yy",},
+    {"name":"spr_key","order":4,"path":"sprites/spr_key/spr_key.yy",},
   ],
 }
