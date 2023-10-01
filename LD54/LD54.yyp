@@ -41,6 +41,7 @@
     {"id":{"name":"spr_cursor","path":"sprites/spr_cursor/spr_cursor.yy",},},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},},
     {"id":{"name":"obj_cursor","path":"objects/obj_cursor/obj_cursor.yy",},},
+    {"id":{"name":"fnt_test","path":"fonts/fnt_test/fnt_test.yy",},},
     {"id":{"name":"spr_ammo","path":"sprites/spr_ammo/spr_ammo.yy",},},
     {"id":{"name":"obj_goal","path":"objects/obj_goal/obj_goal.yy",},},
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},
