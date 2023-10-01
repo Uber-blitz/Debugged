@@ -79,6 +79,7 @@ shoot = function() //modifiers currently does nothing
 			image_angle = point_direction(obj_player.x, obj_player.y, obj_cursor.x, obj_cursor.y)
 			direction = point_direction(obj_player.x, obj_player.y, obj_cursor.x, obj_cursor.y)
 			speed = 10
+			instance = "player"
 		}
 		ammo -= 1
 	}
