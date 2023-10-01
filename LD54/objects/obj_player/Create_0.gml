@@ -1,11 +1,13 @@
-
+#region var def
 ammoMax = 12
 ammo = 12
 reloadSpeed = 0.15
 walkSpeed = 5
 maxHP = 16
 HP = 16
+#endregion
 
+#region func def
 stateIdle = function()
 {
 	if((keyboard_check(ord("S")) == true) or (keyboard_check(ord("W")) == true) or (keyboard_check(ord("D")) == true) or (keyboard_check(ord("A")) == true))
@@ -131,5 +133,6 @@ stateReload = function()
 		obj_ammo.image_index = ammoMax - ammo
 	}
 }
+#endregion
 
 state = stateIdle
