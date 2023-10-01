@@ -13,7 +13,7 @@ stateIdle = function()
 		state = stateWalk
 	}
 	
-	if keyboard_check_pressed(vk_space)
+	if keyboard_check_pressed(vk_space) or mouse_check_button_pressed(mb_left)
 	{
 		shoot()
 	}
@@ -27,23 +27,31 @@ stateIdle = function()
 stateWalk  = function()
 {	
 	//true and false = 1/0 in gms
-	vInput = keyboard_check(ord("S")) - keyboard_check(ord("W")) //can be -1, 0, or 1
-	hInput = keyboard_check(ord("D")) - keyboard_check(ord("A")) //can be -1, 0, or 1
+	var vInput = keyboard_check(ord("S")) - keyboard_check(ord("W")) //can be -1, 0, or 1
+	var hInput = keyboard_check(ord("D")) - keyboard_check(ord("A")) //can be -1, 0, or 1
 
 	if(hInput != 0 or vInput != 0) //if player is not, not moving
 	{
 		dir = point_direction(0,0,hInput,vInput) //vives us an angle on 45* increments
 		moveX = lengthdir_x(walkSpeed, dir)
 		moveY = lengthdir_y(walkSpeed, dir)
-		x += moveX
-		y += moveY
+		if(place_meeting(x + (moveX*1.05), y, obj_wall) == false) 
+		{
+			x += moveX
+			obj_cursor.x += moveX*1.9
+		}
+		if(place_meeting(x, y + (moveY*1.05), obj_wall) == false)
+		{
+			y += moveY
+			obj_cursor.y += moveY*1.9
+		}
 	}
 	else
 	{
 		state = stateIdle
 	}
 	
-	if keyboard_check_pressed(vk_space)
+	if keyboard_check_pressed(vk_space) or mouse_check_button_pressed(mb_left)
 	{
 		shoot()
 	}
@@ -77,8 +85,6 @@ addBullet = function()
 	obj_ammo.image_index += 1
 }
 TSreload = time_source_create(time_source_game, reloadSpeed, time_source_units_seconds, addBullet, [], 1)
-
-
 
 stateReload = function()
 {
