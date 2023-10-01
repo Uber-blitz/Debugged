@@ -34,6 +34,8 @@
   "spriteId": {
     "name": "spr_player",
     "path": "sprites/spr_player/spr_player.yy",
+    "name": "user",
+    "path": "sprites/user/user.yy",
   },
   "spriteMaskId": null,
   "visible": true,

@@ -1,2 +1,0 @@
-
-//bulletReady = "yes"

@@ -6,9 +6,6 @@ walkSpeed = 5
 maxHP = 16
 HP = 16
 
-//reloading = "no"
-//bulletReady = "yes"
-
 stateIdle = function()
 {
 	if((keyboard_check(ord("S")) == true) or (keyboard_check(ord("W")) == true) or (keyboard_check(ord("D")) == true) or (keyboard_check(ord("A")) == true))
@@ -40,24 +37,10 @@ stateWalk  = function()
 		moveY = lengthdir_y(walkSpeed, dir)
 		x += moveX
 		y += moveY
-		
-		//if(place_meeting(x + moveX, y, wall) == false) 
-		//{
-		//	x += moveX
-		//}
-		//if(place_meeting(x, y + moveY, wall) == false)
-		//{
-		//	y += moveY
-		//}
 	}
 	else
 	{
 		state = stateIdle
-	}
-	
-	if(hInput != 0)
-	{
-		image_xscale = hInput
 	}
 	
 	if keyboard_check_pressed(vk_space)
