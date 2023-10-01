@@ -77,7 +77,6 @@ shoot = function() //modifiers currently does nothing
 			image_angle = point_direction(obj_player.x, obj_player.y, obj_cursor.x, obj_cursor.y)
 			direction = point_direction(obj_player.x, obj_player.y, obj_cursor.x, obj_cursor.y)
 			speed = other.bulletSpeed
-			instance = "player"
 			damage = 1
 			penMax = 1
 		}
@@ -139,6 +138,21 @@ stateReload = function()
 		obj_ammo.image_index = ammoMax - ammo
 	}
 }
+
+stateDeath = function()
+{
+	
+}
+
+takeDamage = function(amount)
+{
+	HP -= amount
+	if HP <= 0
+	{
+		state = stateDeath
+	}
+}
+
 #endregion
 
 state = stateIdle

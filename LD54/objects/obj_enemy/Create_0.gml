@@ -1,36 +1,40 @@
 #region var def
-detectionRadius = 200
-//detectedPlayer = "false"
-bulletReady = "yes"
-walkSpeed = 2
-enemyHP = 10
+//detectionRadius = set by varient
+//walkSpeed = set by varient
+//enemyHP = set by varient
+//minRadius = set by varient
 checkFor = obj_player
 #endregion
 
 #region func def
+
+TSfire = time_source_create(time_source_game, 1, time_source_units_seconds, enemyShoot, [], -1)
+
 stateIdle = function()
 {
 	if point_distance(x, y, checkFor.x, checkFor.y) < detectionRadius
 	{
 		state = stateActive
+		time_source_start(TSfire)
 	}	
 }
 
 stateActive = function()
 {
-	
 	dir = point_direction(x, y, checkFor.x, checkFor.y)
 	
-	if(place_meeting(x + lengthdir_x(walkSpeed, dir), y, obj_wall) == false)
+	if point_distance(x, y, checkFor.x, checkFor.y) > minRadius
 	{
-		x += lengthdir_x(walkSpeed, dir)
-	}
+		if(place_meeting(x + lengthdir_x(walkSpeed, dir), y, obj_wall) == false)
+		{
+			x += lengthdir_x(walkSpeed, dir)
+		}
 	
-	if(place_meeting(x, y + lengthdir_y(walkSpeed, dir), obj_wall) == false)
-	{
-		y += lengthdir_y(walkSpeed, dir)
+		if(place_meeting(x, y + lengthdir_y(walkSpeed, dir), obj_wall) == false)
+		{
+			y += lengthdir_y(walkSpeed, dir)
+		}
 	}
-	
 }
 
 unStack = function()
@@ -57,9 +61,6 @@ unStack = function()
 					y += lengthdir_y(walkSpeed, dir)
 				}
 			}
-			
-			//index.x += lengthdir_x(walkSpeed, dir)
-			//index.y += lengthdir_y(walkSpeed, dir)
 		}
 	}
 	ds_list_clear(list) 
@@ -89,6 +90,10 @@ takeDamage = function(amount)
 	if enemyHP <= 0
 	{
 		state = stateDeath
+		if time_source_get_state(TSfire) == time_source_state_active
+		{
+			time_source_stop(TSfire)
+		}
 		mask_index = -1
 	}
 }
