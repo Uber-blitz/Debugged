@@ -5,6 +5,7 @@ reloadSpeed = 0.15
 walkSpeed = 5
 maxHP = 16
 HP = 16
+bulletSpeed = 10
 #endregion
 
 #region func def
@@ -73,8 +74,10 @@ shoot = function() //modifiers currently does nothing
 		{
 			image_angle = point_direction(obj_player.x, obj_player.y, obj_cursor.x, obj_cursor.y)
 			direction = point_direction(obj_player.x, obj_player.y, obj_cursor.x, obj_cursor.y)
-			speed = 10
+			speed = other.bulletSpeed
 			instance = "player"
+			damage = 1
+			penMax = 1
 		}
 		ammo -= 1
 		obj_ammo.image_index += 1
