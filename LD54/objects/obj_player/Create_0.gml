@@ -3,6 +3,8 @@ ammoMax = 12
 ammo = 12
 reloadSpeed = 0.15
 walkSpeed = 5
+maxHP = 16
+HP = 16
 
 //reloading = "no"
 //bulletReady = "yes"
@@ -82,12 +84,14 @@ shoot = function() //modifiers currently does nothing
 			instance = "player"
 		}
 		ammo -= 1
+		obj_ammo.image_index += 1
 	}
 }
 
 addBullet = function()
 {
 	ammo += 1
+	obj_ammo.image_index += 1
 }
 TSreload = time_source_create(time_source_game, reloadSpeed, time_source_units_seconds, addBullet, [], 1)
 
@@ -109,8 +113,11 @@ stateReload = function()
 		y += moveY /2
 	}
 	
+	obj_ammo.image_index = ammo + (ammoMax + 1) //setting up UI to correctly display reloading
+	
 	if (ammo == ammoMax)
 	{
+		obj_ammo.image_index = 0
 		if time_source_get_state(TSreload) == time_source_state_active
 		{
 			time_source_stop(TSreload)
@@ -132,6 +139,7 @@ stateReload = function()
 			time_source_stop(TSreload)
 		}
 		state = stateIdle
+		obj_ammo.image_index = ammoMax - ammo
 	}
 }
 
