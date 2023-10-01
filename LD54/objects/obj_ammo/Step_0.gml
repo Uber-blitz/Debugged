@@ -1,6 +1,7 @@
 
 if x != obj_player.x or y != obj_player.y - 41{
-	move_towards_point(obj_player.x, obj_player.y - 41, 5)
+	x = obj_player.x
+	y = obj_player.y -40
 }
 else{
 	speed = 0
