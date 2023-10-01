@@ -1,10 +1,19 @@
-if tutDelay == 0
+if room = Room1
 {
-	tutNum ++
-	tutDelay = 180;
+	tutorial = true
 }
+else tutorial = false;
 
-if tutNum <= 4
+if tutorial = true
 {
-tutDelay --
+	if tutDelay == 0
+	{
+		tutNum ++
+		tutDelay = 180;
+	}
+	
+	if tutNum <= 4
+	{
+	tutDelay --
+	}
 }

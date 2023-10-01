@@ -1,4 +1,4 @@
-if goalCur == 2
+if goalCur == goalNumber
 	{
 		goalOpen = true;
 	}
