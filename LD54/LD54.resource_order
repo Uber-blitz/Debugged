@@ -24,8 +24,10 @@
   "ResourceOrderSettings": [
     {"name":"wall","order":4,"path":"sprites/wall/wall.yy",},
     {"name":"sprBackground","order":2,"path":"sprites/sprBackground/sprBackground.yy",},
+    {"name":"snd_KeyPickup","order":2,"path":"sounds/snd_KeyPickup/snd_KeyPickup.yy",},
     {"name":"obj_game","order":2,"path":"objects/obj_game/obj_game.yy",},
     {"name":"spr_cursor","order":1,"path":"sprites/spr_cursor/spr_cursor.yy",},
+    {"name":"snd_PlayerReload","order":1,"path":"sounds/snd_PlayerReload/snd_PlayerReload.yy",},
     {"name":"enemy3","order":2,"path":"sprites/enemy3/enemy3.yy",},
     {"name":"obj_cursor","order":3,"path":"objects/obj_cursor/obj_cursor.yy",},
     {"name":"enemy5","order":4,"path":"sprites/enemy5/enemy5.yy",},

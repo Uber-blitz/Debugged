@@ -18,11 +18,13 @@ stateIdle = function()
 	
 	if keyboard_check_pressed(vk_space) or mouse_check_button_pressed(mb_left)
 	{
+		
 		shoot()
 	}
 	
 	if (keyboard_check_pressed(ord("R")) and (ammo < ammoMax))
 	{
+		audio_play_sound(snd_PlayerReload,3,false);
 		state = stateReload
 	}
 }
@@ -81,6 +83,7 @@ shoot = function() //modifiers currently does nothing
 		}
 		ammo -= 1
 		obj_ammo.image_index += 1
+		audio_play_sound(snd_PlayerFire,5,false);
 	}
 }
 
