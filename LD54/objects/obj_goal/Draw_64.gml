@@ -6,3 +6,8 @@ if goal = "keysCollected"
 {
 	draw_text(0, 400, "Keys: " + string(goalCur) + "/" + string(goalNumber));
 }
+
+if goal = "enemyKills"
+{
+	draw_text(0, 400, "Kills: " + string(goalCur) + "/" + string(goalNumber));
+}

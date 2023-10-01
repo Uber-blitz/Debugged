@@ -25,6 +25,7 @@
     {"name":"obj_cursor","order":3,"path":"objects/obj_cursor/obj_cursor.yy",},
     {"name":"spr_ammo","order":1,"path":"sprites/spr_ammo/spr_ammo.yy",},
     {"name":"obj_goal","order":5,"path":"objects/obj_goal/obj_goal.yy",},
+    {"name":"Room2","order":2,"path":"rooms/Room2/Room2.yy",},
     {"name":"obj_camera","order":7,"path":"objects/obj_camera/obj_camera.yy",},
     {"name":"obj_bullet","order":4,"path":"objects/obj_bullet/obj_bullet.yy",},
     {"name":"spr_door","order":3,"path":"sprites/spr_door/spr_door.yy",},

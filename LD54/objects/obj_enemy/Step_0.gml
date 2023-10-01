@@ -24,5 +24,9 @@ if detectedPlayer == "true"{
 }
 
 if HP <= 0{
+	if obj_goal.goal == "enemyKills"
+	{
+		obj_goal.goalCur++
+	}
 	instance_destroy()
 }
