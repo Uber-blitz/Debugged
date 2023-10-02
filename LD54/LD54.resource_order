@@ -56,6 +56,7 @@
     {"name":"obj_ammo","order":1,"path":"objects/obj_ammo/obj_ammo.yy",},
     {"name":"spr_enemy","order":5,"path":"sprites/spr_enemy/spr_enemy.yy",},
     {"name":"obj_key","order":6,"path":"objects/obj_key/obj_key.yy",},
+    {"name":"Room3","order":3,"path":"rooms/Room3/Room3.yy",},
     {"name":"enemy4","order":3,"path":"sprites/enemy4/enemy4.yy",},
     {"name":"spr_key","order":1,"path":"sprites/spr_key/spr_key.yy",},
   ],

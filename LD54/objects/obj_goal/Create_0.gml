@@ -15,4 +15,9 @@ switch(room)
 		goalNumber = 1;
 		goalCur = 0;
 	break;
+	
+	case Room3:
+		goal = goalType[1]
+		goalNumber = 4;
+		goalCur = 0;
 }
