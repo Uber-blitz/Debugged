@@ -24,6 +24,7 @@ stateIdle = function()
 	if (keyboard_check_pressed(ord("R")) and (ammo < ammoMax))
 	{
 		state = stateReload
+		audio_play_sound(snd_PlayerReload,5,false);
 	}
 	
 }
@@ -83,6 +84,7 @@ stateWalk  = function()
 	if (keyboard_check_pressed(ord("R")) and (ammo < ammoMax))
 	{
 		state = stateReload
+		audio_play_sound(snd_PlayerReload,5,false);
 	}
 }
 
@@ -145,6 +147,7 @@ stateReload = function()
 			time_source_stop(TSreload)
 		}
 		state = stateIdle
+		audio_stop_sound(snd_PlayerReload);
 	}
 	else
 	{
@@ -162,6 +165,7 @@ stateReload = function()
 		}
 		state = stateIdle
 		obj_ammo.image_index = ammoMax - ammo
+		audio_stop_sound(snd_PlayerReload)
 	}
 }
 
