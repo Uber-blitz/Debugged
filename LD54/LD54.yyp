@@ -84,6 +84,7 @@
     {"id":{"name":"enemy4","path":"sprites/enemy4/enemy4.yy",},},
     {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},},
     {"id":{"name":"spr_key","path":"sprites/spr_key/spr_key.yy",},},
+    {"id":{"name":"snd_Enemyshot","path":"sounds/snd_Enemyshot/snd_Enemyshot.yy",},},
     {"id":{"name":"obj_windowResizer","path":"objects/obj_windowResizer/obj_windowResizer.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
