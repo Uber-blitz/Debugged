@@ -28,7 +28,7 @@ switch(room)
 		
 	case Level4:
 		goal = goalType[0];
-		goalNumber = 13;
+		goalNumber = 12;
 		goalCur = 0;
 		global.nextLevel = 5
 	break;
