@@ -65,6 +65,7 @@
     {"id":{"name":"sprBackground2","path":"sprites/sprBackground2/sprBackground2.yy",},},
     {"id":{"name":"obj_GameLogo","path":"objects/obj_GameLogo/obj_GameLogo.yy",},},
     {"id":{"name":"obj_Playbutton","path":"objects/obj_Playbutton/obj_Playbutton.yy",},},
+    {"id":{"name":"snd_ExtraHealth","path":"sounds/snd_ExtraHealth/snd_ExtraHealth.yy",},},
     {"id":{"name":"user","path":"sprites/user/user.yy",},},
     {"id":{"name":"obj_grunt","path":"objects/obj_grunt/obj_grunt.yy",},},
     {"id":{"name":"sprHealthBack","path":"sprites/sprHealthBack/sprHealthBack.yy",},},

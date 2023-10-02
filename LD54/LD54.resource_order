@@ -45,6 +45,7 @@
     {"name":"sprBackground2","order":3,"path":"sprites/sprBackground2/sprBackground2.yy",},
     {"name":"obj_GameLogo","order":6,"path":"objects/obj_GameLogo/obj_GameLogo.yy",},
     {"name":"obj_Playbutton","order":2,"path":"objects/obj_Playbutton/obj_Playbutton.yy",},
+    {"name":"snd_ExtraHealth","order":5,"path":"sounds/snd_ExtraHealth/snd_ExtraHealth.yy",},
     {"name":"user","order":11,"path":"sprites/user/user.yy",},
     {"name":"obj_grunt","order":1,"path":"objects/obj_grunt/obj_grunt.yy",},
     {"name":"sprHealthBack","order":4,"path":"sprites/sprHealthBack/sprHealthBack.yy",},
