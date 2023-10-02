@@ -91,6 +91,7 @@
     {"id":{"name":"RoomTransition","path":"rooms/RoomTransition/RoomTransition.yy",},},
     {"id":{"name":"spr_wall","path":"sprites/spr_wall/spr_wall.yy",},},
     {"id":{"name":"spr_bullet3","path":"sprites/spr_bullet3/spr_bullet3.yy",},},
+    {"id":{"name":"Level7","path":"rooms/Level7/Level7.yy",},},
     {"id":{"name":"obj_ammo","path":"objects/obj_ammo/obj_ammo.yy",},},
     {"id":{"name":"spr_enemy","path":"sprites/spr_enemy/spr_enemy.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
@@ -117,6 +118,7 @@
     {"roomId":{"name":"Level6","path":"rooms/Level6/Level6.yy",},},
     {"roomId":{"name":"rm_Settings","path":"rooms/rm_Settings/rm_Settings.yy",},},
     {"roomId":{"name":"RoomTransition","path":"rooms/RoomTransition/RoomTransition.yy",},},
+    {"roomId":{"name":"Level7","path":"rooms/Level7/Level7.yy",},},
   ],
   "templateType": "game",
   "TextureGroups": [

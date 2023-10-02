@@ -66,6 +66,7 @@
     {"name":"RoomTransition","order":1,"path":"rooms/RoomTransition/RoomTransition.yy",},
     {"name":"spr_wall","order":8,"path":"sprites/spr_wall/spr_wall.yy",},
     {"name":"spr_bullet3","order":2,"path":"sprites/spr_bullet3/spr_bullet3.yy",},
+    {"name":"Level7","order":7,"path":"rooms/Level7/Level7.yy",},
     {"name":"obj_ammo","order":1,"path":"objects/obj_ammo/obj_ammo.yy",},
     {"name":"spr_enemy","order":5,"path":"sprites/spr_enemy/spr_enemy.yy",},
     {"name":"obj_player","order":4,"path":"objects/obj_player/obj_player.yy",},
