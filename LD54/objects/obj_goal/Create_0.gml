@@ -22,24 +22,19 @@ switch(room)
 		goal = goalType[1];
 		goalNumber = 4;
 		goalCur = 0;
+		global.nextLevel = 4;
 	break;
 		
 	case Level4:
-	goal = goalType[1];
-	goalNumber = 4;
-	goalCur = 0;
-	global.nextLevel = 4
-		
-	case Level4:
-		goal = goalType[1];
-		goalNumber = 5;
+		goal = goalType[0];
+		goalNumber = 13;
 		goalCur = 0;
 		global.nextLevel = 5
 	break;
 	
 	case Level5:
 		goal = goalType[0]
-		goalNumber = 28
+		goalNumber = 22
 		goalCur = 0
 		global.nextLevel = 1
 	break;
