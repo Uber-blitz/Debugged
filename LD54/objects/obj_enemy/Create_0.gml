@@ -5,6 +5,7 @@
 //minRadius = set by varient
 checkFor = obj_player
 flash = 0;
+depth = 10
 #endregion
 
 #region func def
@@ -34,6 +35,18 @@ stateActive = function()
 		if(place_meeting(x, y + lengthdir_y(walkSpeed, dir), obj_wall) == false)
 		{
 			y += lengthdir_y(walkSpeed, dir)
+		}
+	}
+	if point_distance(x, y, checkFor.x, checkFor.y) < minRadius
+	{
+		if(place_meeting(x - lengthdir_x(walkSpeed, dir), y, obj_wall) == false)
+		{
+			x -= lengthdir_x(walkSpeed, dir)
+		}
+	
+		if(place_meeting(x, y - lengthdir_y(walkSpeed, dir), obj_wall) == false)
+		{
+			y -= lengthdir_y(walkSpeed, dir)
 		}
 	}
 }

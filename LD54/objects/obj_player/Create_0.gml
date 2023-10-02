@@ -28,6 +28,25 @@ stateIdle = function()
 	
 }
 
+createHealth = function()
+{
+	hpBar = instance_create_layer(x, y, "Instances", obj_healthbar)
+	with (hpBar) 
+	{
+		maxNumb = other.maxHP
+		currentNumb = other.HP
+		followID = other.id
+		wScale = 1
+	}
+}
+updateHealth = function()
+{
+	with (hpBar)
+	{
+		maxNumb = other.maxHP
+		currentNumb = other.HP
+	}
+}
 
 stateWalk  = function()
 {	
@@ -102,11 +121,18 @@ stateReload = function()
 	if(hInput != 0 or vInput != 0) //if player is not, not moving
 	{
 		dir = point_direction(0, 0, hInput, vInput) //vives us an angle on 45* increments
-		moveX = lengthdir_x(walkSpeed, dir)
-		moveY = lengthdir_y(walkSpeed, dir)
-	
-		x += moveX /2
-		y += moveY /2
+		moveX = lengthdir_x(walkSpeed, dir) / 2
+		moveY = lengthdir_y(walkSpeed, dir) / 2
+		if(place_meeting(x + (moveX*1.05), y, obj_wall) == false) 
+		{
+			x += moveX
+			obj_cursor.x += moveX*1.9
+		}
+		if(place_meeting(x, y + (moveY*1.05), obj_wall) == false)
+		{
+			y += moveY
+			obj_cursor.y += moveY*1.9
+		}
 	}
 	
 	obj_ammo.image_index = ammo + (ammoMax + 1) //setting up UI to correctly display reloading
@@ -156,3 +182,4 @@ takeDamage = function(amount)
 #endregion
 
 state = stateIdle
+createHealth()

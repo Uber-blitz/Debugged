@@ -1,1 +1,11 @@
-image_index = obj_player.maxHP - obj_player.HP
+x = followID.x
+y = followID.y + 50
+
+if currentNumb < maxNumb
+{
+	visible = true
+}
+else
+{
+	visible = false
+}

@@ -1,4 +1,5 @@
 state()
+updateHealth()
 
 obj_ammo.x = x
 obj_ammo.y = y - 40

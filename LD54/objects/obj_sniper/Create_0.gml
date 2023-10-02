@@ -1,8 +1,8 @@
-detectionRadius = 250
-walkSpeed = 3
-enemyHP = 8
-minRadius = 100
-bulletSpeed = 10
+detectionRadius = 700
+walkSpeed = 1
+enemyHP = 4
+minRadius = 500
+bulletSpeed = 15
 
 enemyShoot = function()
 {
@@ -14,12 +14,13 @@ enemyShoot = function()
 		direction = point_direction(x, y, obj_player.x, obj_player.y)
 		speed = other.bulletSpeed
 		decay = false
-		damage = 1
+		damage = 3
 		penMax = 1
-		image_index = 0
+		image_index = 4
 	}
 }
 
 // Inherit the parent event
 event_inherited();
 
+time_source_reconfigure(TSfire, 3.5, time_source_units_seconds, enemyShoot, [], -1)

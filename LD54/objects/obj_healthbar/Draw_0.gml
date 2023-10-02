@@ -1,0 +1,2 @@
+draw_sprite_stretched(sprHealthBack, 0, x - (barWidth / 2), y - 5, barWidth, barHeight)
+draw_sprite_stretched(sprHealthFront, 0, x - (barWidth / 2) + 2, y - 3, (currentNumb/maxNumb) * barWidth - 1, barHeight - 4)

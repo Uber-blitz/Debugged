@@ -25,3 +25,5 @@ check = function()
 
 	ds_list_clear(list) 
 }
+
+depth = 800
