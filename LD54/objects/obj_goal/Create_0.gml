@@ -23,13 +23,13 @@ switch(room)
 	break;
 		
 	case Level4:
-	goal = goalType[0];
-	goalNumber = 5;
+	goal = goalType[1];
+	goalNumber = 4;
 	goalCur = 0;
 	break;
 	
 	case Level5:
-		goal = goalType[1]
+		goal = goalType[0]
 		goalNumber = 28
 		goalCur = 0
 	break;
