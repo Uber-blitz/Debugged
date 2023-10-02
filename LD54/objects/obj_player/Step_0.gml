@@ -15,5 +15,7 @@ y = clamp(y,0 + 32, room_height - 32)
 if obj_goal.goalOpen && place_meeting(x, y, obj_goal)
 {
 	audio_stop_all()
+	instance_destroy(obj_enemy, true)
+	instance_destroy(obj_enemyBullet)
 	room_goto_next()
 }
