@@ -45,7 +45,7 @@ switch(room)
 		goalCur = 0
 		global.nextLevel = 7
 	break;
-	case Level6:
+	case Level7:
 		goal = goalType[0]
 		goalNumber = 32
 		goalCur = 0
