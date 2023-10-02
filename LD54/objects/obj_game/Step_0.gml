@@ -6,7 +6,7 @@ else tutorial = false;
 
 if room != Level1
 {
-	tutNum = 5;
+	tutNum = 6;
 }
 
 
@@ -23,3 +23,5 @@ if tutorial == true
 		tutDelay --
 	}
 }
+
+windowScale(winTargX, winTargY)

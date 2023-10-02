@@ -17,6 +17,7 @@ if obj_goal.goalOpen && place_meeting(x, y, obj_goal)
 	audio_stop_all()
 	instance_destroy(obj_enemy, true)
 	instance_destroy(obj_enemyBullet)
-	room_goto_next()
-	room_goto(RoomTransition);
+	room_goto(RoomTransition)
+	window_center()
+	window_set_size(800,800)
 }
