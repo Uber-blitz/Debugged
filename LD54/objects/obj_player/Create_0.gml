@@ -169,9 +169,18 @@ stateReload = function()
 	}
 }
 
+over = function()
+{
+	game_end()
+}
+TSgameEnd = time_source_create(time_source_game, 4, time_source_units_seconds, over)
+
 stateDeath = function()
 {
-	
+	if time_source_get_state(TSgameEnd) != time_source_state_active
+	{
+		time_source_start(TSgameEnd)
+	}
 }
 
 takeDamage = function(amount)
