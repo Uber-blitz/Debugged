@@ -30,6 +30,7 @@
     {"name":"spr_Play","order":2,"path":"sprites/spr_Play/spr_Play.yy",},
     {"name":"obj_game","order":2,"path":"objects/obj_game/obj_game.yy",},
     {"name":"obj_Settings","order":4,"path":"objects/obj_Settings/obj_Settings.yy",},
+    {"name":"gameAsset","order":17,"path":"sprites/gameAsset/gameAsset.yy",},
     {"name":"spr_Goback","order":6,"path":"sprites/spr_Goback/spr_Goback.yy",},
     {"name":"spr_cursor","order":1,"path":"sprites/spr_cursor/spr_cursor.yy",},
     {"name":"obj_enemyBullet","order":5,"path":"objects/obj_enemyBullet/obj_enemyBullet.yy",},

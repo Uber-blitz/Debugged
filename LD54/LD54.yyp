@@ -47,6 +47,7 @@
     {"id":{"name":"spr_Play","path":"sprites/spr_Play/spr_Play.yy",},},
     {"id":{"name":"obj_game","path":"objects/obj_game/obj_game.yy",},},
     {"id":{"name":"obj_Settings","path":"objects/obj_Settings/obj_Settings.yy",},},
+    {"id":{"name":"gameAsset","path":"sprites/gameAsset/gameAsset.yy",},},
     {"id":{"name":"spr_Goback","path":"sprites/spr_Goback/spr_Goback.yy",},},
     {"id":{"name":"spr_cursor","path":"sprites/spr_cursor/spr_cursor.yy",},},
     {"id":{"name":"obj_enemyBullet","path":"objects/obj_enemyBullet/obj_enemyBullet.yy",},},
