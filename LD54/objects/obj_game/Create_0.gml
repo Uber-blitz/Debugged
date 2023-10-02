@@ -5,8 +5,9 @@ if room == Level1
 }
 else tutorial = false;
 tutNum = 0;
-tutMessage = ["Welcome to Debugged!", "Move with WASD", "Aim with the mouse", "Fire with space!", "Check the bottom left for goal\nrequirement!", ""]
+tutMessage = ["Welcome to Debugged!", "Move with WASD", "Aim with the mouse", "Fire with space!", "Reload with R", "Check the bottom left for \ngoal requirement!", ""]
 tutDelay = 180;
+
 
 
 if room == RoomTransition{

@@ -18,8 +18,8 @@ if tutorial == true
 		tutDelay = 180;
 	}
 	
-	if tutNum <= 4
+	if tutNum <= 5
 	{
-	tutDelay --
+		tutDelay --
 	}
 }

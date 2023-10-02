@@ -1,16 +1,19 @@
-if room != RoomTransition{
-	draw_set_font(fnt_test);
-	draw_set_halign(fa_left);
-	draw_set_valign(fa_top);
-	draw_text(0,0,tutMessage[tutNum]);
+if room != RoomTransition
+{
+	draw_set_font(fnt_test)
+	draw_set_halign(fa_left)
+	draw_set_valign(fa_top)
+	draw_text_transformed(0,0,tutMessage[tutNum], 1.5, 1.5, 0)
 }
 
-if room == RoomTransition{
+if room == RoomTransition
+{
 	draw_set_font(fnt_nextLevelTitle)
 	draw_set_halign(fa_center)
 	var c = c_white
 	draw_text_transformed_color(500, room_height / 2, "LEVEL: " + string_delete(global.nextLevel, 0, 5), 1, 1, 0, c, c, c, c, 1)
-	switch(global.nextLevel){
+	switch(global.nextLevel)
+	{
 		case(Level1):
 			draw_set_font(fnt_nextLevel)
 			draw_text_transformed_color(500, (room_height / 2) + 70, "Collect the keys to open the exit", 1, 1, 0, c, c, c, c, 1)
@@ -29,7 +32,7 @@ if room == RoomTransition{
 		break;
 		case(Level5):
 			draw_set_font(fnt_nextLevel)
-			draw_text_transformed_color(500, (room_height / 2) + 70, "Beware the snipers reach and execute them all", 1, 1, 0, c, c, c, c, 1)
+			draw_text_transformed_color(500, (room_height / 2) + 70, "Beware the snipers reach, and execute them all", 1, 1, 0, c, c, c, c, 1)
 		break;
 		default:
 			draw_set_font(fnt_nextLevel)
