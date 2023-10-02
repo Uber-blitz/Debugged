@@ -14,5 +14,6 @@ y = clamp(y,0 + 32, room_height - 32)
 
 if obj_goal.goalOpen && place_meeting(x, y, obj_goal)
 {
-	room_goto_next();
+	audio_stop_all()
+	room_goto_next()
 }
