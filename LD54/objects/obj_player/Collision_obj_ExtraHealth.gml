@@ -3,3 +3,5 @@ with(other)
 {
 	instance_destroy(); 
 }
+
+audio_play_sound(snd_ExtraHealth,5,false);
