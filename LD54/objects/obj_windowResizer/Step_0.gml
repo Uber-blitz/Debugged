@@ -1,1 +1,1 @@
-window_set_position(obj_camera.x, obj_camera.y)
+window_set_position(obj_camera.x - 30, obj_camera.y - 30)
