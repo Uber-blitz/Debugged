@@ -5,5 +5,5 @@ if room == Level1
 }
 else tutorial = false;
 tutNum = 0;
-tutMessage = ["Welcome to LD54!", "Move with WASD", "Aim with the mouse", "Fire with space!", "Collect the keys to unlock the goal", ""]
+tutMessage = ["Welcome to Debugged!", "Move with WASD", "Aim with the mouse", "Fire with space!", "Check the bottom left for goal\nrequirement!", ""]
 tutDelay = 180;

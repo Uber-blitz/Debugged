@@ -4,10 +4,10 @@ draw_set_valign(fa_bottom);
 
 if goal = "keysCollected"
 {
-	draw_text(0, 400, "Keys: " + string(goalCur) + "/" + string(goalNumber));
+	draw_text(0, 1000, "Keys: " + string(goalCur) + "/" + string(goalNumber));
 }
 
 if goal = "enemyKills"
 {
-	draw_text(0, 400, "Kills: " + string(goalCur) + "/" + string(goalNumber));
+	draw_text(0, 1000, "Kills: " + string(goalCur) + "/" + string(goalNumber));
 }
