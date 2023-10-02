@@ -1,0 +1,2 @@
+
+global.nextLevel = 1

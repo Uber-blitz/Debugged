@@ -7,4 +7,8 @@ else tutorial = false;
 tutNum = 0;
 tutMessage = ["Welcome to Debugged!", "Move with WASD", "Aim with the mouse", "Fire with space!", "Check the bottom left for goal\nrequirement!", ""]
 tutDelay = 180;
-visible = false
+
+
+if room == RoomTransition{
+	alarm[0] = room_speed * 5
+}

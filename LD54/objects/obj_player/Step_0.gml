@@ -18,4 +18,5 @@ if obj_goal.goalOpen && place_meeting(x, y, obj_goal)
 	instance_destroy(obj_enemy, true)
 	instance_destroy(obj_enemyBullet)
 	room_goto_next()
+	room_goto(RoomTransition);
 }
