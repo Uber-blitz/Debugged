@@ -115,7 +115,6 @@
     {"id":{"name":"spr_key","path":"sprites/spr_key/spr_key.yy",},},
     {"id":{"name":"snd_Enemyshot","path":"sounds/snd_Enemyshot/snd_Enemyshot.yy",},},
     {"id":{"name":"obj_windowResizer","path":"objects/obj_windowResizer/obj_windowResizer.yy",},},
-    {"id":{"name":"snd_ExtraHealth","path":"sounds/snd_ExtraHealth/snd_ExtraHealth.yy",},},
     {"id":{"name":"Level1","path":"rooms/Level1/Level1.yy",},},
   ],
   "RoomOrderNodes": [

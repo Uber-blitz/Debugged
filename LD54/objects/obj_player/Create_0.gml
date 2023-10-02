@@ -3,8 +3,8 @@ ammoMax = 12
 ammo = 12
 reloadSpeed = 0.15
 walkSpeed = 5
-maxHP = 16
-HP = 16
+maxHP = 200
+HP = 200
 bulletSpeed = 10
 #endregion
 

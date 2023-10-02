@@ -87,6 +87,5 @@
     {"name":"spr_pointer","order":19,"path":"sprites/spr_pointer/spr_pointer.yy",},
     {"name":"spr_key","order":1,"path":"sprites/spr_key/spr_key.yy",},
     {"name":"snd_Enemyshot","order":3,"path":"sounds/snd_Enemyshot/snd_Enemyshot.yy",},
-    {"name":"snd_ExtraHealth","order":5,"path":"sounds/snd_ExtraHealth/snd_ExtraHealth.yy",},
   ],
 }
