@@ -80,6 +80,7 @@
     {"id":{"name":"spr_bullet","path":"sprites/spr_bullet/spr_bullet.yy",},},
     {"id":{"name":"sprHealthFront","path":"sprites/sprHealthFront/sprHealthFront.yy",},},
     {"id":{"name":"enemy2","path":"sprites/enemy2/enemy2.yy",},},
+    {"id":{"name":"Level6","path":"rooms/Level6/Level6.yy",},},
     {"id":{"name":"Level5","path":"rooms/Level5/Level5.yy",},},
     {"id":{"name":"obj_bullet","path":"objects/obj_bullet/obj_bullet.yy",},},
     {"id":{"name":"obj_sniper","path":"objects/obj_sniper/obj_sniper.yy",},},
@@ -107,6 +108,7 @@
     {"id":{"name":"Level1","path":"rooms/Level1/Level1.yy",},},
   ],
   "RoomOrderNodes": [
+    {"roomId":{"name":"Level6","path":"rooms/Level6/Level6.yy",},},
     {"roomId":{"name":"rm_Mainmenu","path":"rooms/rm_Mainmenu/rm_Mainmenu.yy",},},
     {"roomId":{"name":"Level1","path":"rooms/Level1/Level1.yy",},},
     {"roomId":{"name":"Level2","path":"rooms/Level2/Level2.yy",},},

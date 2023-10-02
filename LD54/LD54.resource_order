@@ -58,6 +58,7 @@
     {"name":"spr_bullet","order":12,"path":"sprites/spr_bullet/spr_bullet.yy",},
     {"name":"sprHealthFront","order":5,"path":"sprites/sprHealthFront/sprHealthFront.yy",},
     {"name":"enemy2","order":1,"path":"sprites/enemy2/enemy2.yy",},
+    {"name":"Level6","order":6,"path":"rooms/Level6/Level6.yy",},
     {"name":"obj_bullet","order":1,"path":"objects/obj_bullet/obj_bullet.yy",},
     {"name":"obj_sniper","order":3,"path":"objects/obj_sniper/obj_sniper.yy",},
     {"name":"spr_Exit","order":3,"path":"sprites/spr_Exit/spr_Exit.yy",},

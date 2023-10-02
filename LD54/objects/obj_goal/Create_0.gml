@@ -36,6 +36,13 @@ switch(room)
 		goal = goalType[0]
 		goalNumber = 22
 		goalCur = 0
+		global.nextLevel = 6
+	break;
+	
+	case Level6:
+		goal = goalType[1]
+		goalNumber = 4
+		goalCur = 0
 		global.nextLevel = 1
 	break;
 	
@@ -43,5 +50,6 @@ switch(room)
 		goal = [0]
 		goalNumber = 0
 		goalCur = 0
+		global.nextLevel = 1;
 	break;
 }
