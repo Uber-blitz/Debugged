@@ -21,7 +21,7 @@ switch(room)
 		goalNumber = 4;
 		goalCur = 0;
 		
-		case levelGerald:
+		case Level4:
 		goal = goalType[0];
 		goalNumber = 5;
 		goalCur = 0;

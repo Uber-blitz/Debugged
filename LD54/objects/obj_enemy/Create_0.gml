@@ -4,7 +4,6 @@
 //enemyHP = set by varient
 //minRadius = set by varient
 checkFor = obj_player
-flash = 0;
 depth = 10
 #endregion
 
