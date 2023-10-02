@@ -1,6 +1,7 @@
 goalType = ["enemyKills", "keysCollected"]
 goalOpen = false;
 goalCur = 0;
+pointerCreated = "no"
 
 switch(room)
 {
