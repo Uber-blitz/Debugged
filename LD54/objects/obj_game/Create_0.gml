@@ -1,5 +1,5 @@
 window_mouse_set_locked(true)
-if room = Room1
+if room == Level1
 {
 	tutorial = true
 }
