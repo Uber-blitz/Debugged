@@ -50,7 +50,13 @@ switch(room)
 		goal = goalType[0]
 		goalNumber = 32
 		goalCur = 0
-		global.nextLevel = 1
+		global.nextLevel = 8
+	break;
+	case Level8:
+		goal = goalType[0]
+		goalNumber = 666
+		goalCur = 0
+		global.nextLevel = 8
 	break;
 	
 	default:
